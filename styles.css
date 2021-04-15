@@ -132,6 +132,55 @@ header .hero-btns .button2 a {
 
 /* Search Box */ 
 
+/* Feedback */
+.feedback-container { /* overlap background into nav bar*/
+    background: url('images/feedbackBackground.svg'); 
+    background-repeat: no-repeat; 
+    background-position: right;
+    background-size: contain;
+    height: 175vh; /*TODO fix size*/ 
+    display: flex;
+    align-items: center; 
+}
+
+feedback-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+feedback-body h1 {
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 1750px;
+
+    /* Medium 36 */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    /* Colour/Main/Blue/900 */
+
+    color: #091133;
+}
+
+feedback-body a {
+    position: absolute;
+    height: 48px;
+    left: 650px;
+    right: 200px;
+    top: 1850px;
+}
+
+
 
 
 /* Hidden Items */ 
