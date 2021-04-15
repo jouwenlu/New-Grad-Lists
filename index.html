@@ -4,8 +4,10 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>New Grads List Website</title>
+            <title>New Grads List</title>
             <link rel="stylesheet" href="styles.css">
+            <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,900' rel='stylesheet' type='text/css'>
+            <script type="text/javascript" src='main.js'> </script>
         </head>
         <body>
             <div class="search-box">
@@ -34,14 +36,20 @@
                             New Grad Lists
                         </div>
 
+                        
                         <div class="nav-btn-container">
+                            <a href="">Subscribe Now</a>
+                            <!-- 
                             <a class="nav-subscribe-btn-container" href="#">
                                 <img class="subscribe-btn" src="images/subscribe-btn.svg" alt="">
                             </a>
+                            -->
                         </div>
                     </nav>
                 </div>
             </div>
+
+            <!-- Header and Hero -->
             <div class="header-container">
                 <div class="wrapper">
                     <header>
@@ -50,7 +58,7 @@
                             <p>
                                 -hero content is here- 
                             </p>
-                            
+                            <!-- 
                             <div class="hero-btns">
                                 <div class="button1">
                                     <a href="">Subscribe Now</a>
@@ -59,6 +67,7 @@
                                     <a href="">Donate</a>
                                 </div>
                             </div>
+                            -->
                         </div>
                         <div class="hero-image">
                             <img src="images/hero-image.svg" alt="">
@@ -70,7 +79,57 @@
                 </div>
             </div>
 
+            <!-- Jobs and Table Content -->
+            <div class="jobs-content">
+                <div class="description">
+                    <h1> Internship Programs Offered </h1>
+                    <p> -description is here -</p>
+                </div>
+                <table id="job-table">
+                    <tr>
+                        <th>Company</th>
+                        <th>Status</th>
+                        <th>Class Size</th>
+                        <th>Type</th>
+                    </tr>
+                    <script>
+                        makeTable(); 
+                    </script>
 
-            <script src="main.js"></script>
+                    <!-- 
+                    <tr>
+                        <th>Company</th>
+                        <th>Status</th>
+                        <th>Class Size</th>
+                    </tr>
+                    <tr>
+                        <td>Goldman Sachs</td>
+                        <td>CLOSED</td>
+                        <td>200+</td>
+                        <td>BB</td>
+                    </tr>
+                    <tr>
+                        <td>Morgan Stanley</td>
+                        <td>OPEN</td>
+                        <td>300+</td>
+                        <td>BB</td>
+                    </tr>
+                    </tr>
+                    -->
+                </table>
+            </div>
+
+            <!-- Feedback Section -->
+            <div class="feedback">
+                <h1>Got Feedback?</h1>
+                <div class="feedback-btn">
+                    <a href="">Fill Out This Form!</a>
+                </div>
+            </div>
+            
+            
+
+            <!-- Footer -->
+
         </body>
     </html>

@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -27,11 +26,10 @@ nav {
 nav ul {
     display: flex; 
     padding: 0; 
-  
 }
 
 nav .logo {
-    font-family: 'Roboto'; /* TODO: fix Roboto font */ 
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -48,15 +46,15 @@ nav .logo {
 }
 
 .nav-items li a {
-    font-family: "Roboto"; /*TODO: fix font */ 
+    font-family: "Roboto"; 
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     color: #505F98;
     text-decoration: none;
 }
 
-/* Header */ 
+/* Header & Hero */ 
 .header-container { /* overlap background into nav bar*/
     background: url('images/background-path.svg'); 
     background-repeat: no-repeat; 
@@ -74,7 +72,7 @@ header {
 }
 
 header .hero-content h1 {
-    font-family: "Roboto"; /*TODO font*/ 
+    font-family: "Roboto"; 
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
@@ -85,9 +83,9 @@ header .hero-content h1 {
 }
 
 header .hero-content p {
-    font-family: Roboto; /* TODO can remove */ 
+    font-family: 'Roboto'; 
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #505F98;
@@ -103,6 +101,7 @@ header .hero-btns {
 header .hero-btns .button1 a {
     color: #FFFFFF;
     font-family: Roboto; /*TODO fix*/ 
+    font-weight: 400;
     font-size: 16px;
     text-decoration: none;
 
@@ -121,6 +120,7 @@ header .button1 a:hover {
 header .hero-btns .button2 a {
     color: #091133;
     font-family: Roboto;
+    font-weight: 400;
     font-size: 16px;
     text-decoration: none;
     
@@ -130,7 +130,115 @@ header .hero-btns .button2 a {
     padding: 8px 35px; /* TODO fix */ 
 }
 
+/* Jobs & Table */
+.jobs-content {
+    width: 1084px;
+    margin: 100px auto;
+}
+
+.jobs-content .description h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+
+    letter-spacing: 1px;
+    color: #091133;
+    margin-bottom: 16px;
+}
+
+.jobs-content .description p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F7CB2;
+    margin-bottom: 71px;
+}
+
+.jobs-content table {
+    width: 1084px;
+}
+
+.jobs-content table tr th {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    background: white; 
+    color: #091133;
+    text-align: left;
+}
+
+.jobs-content table tr td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+}
+
+table tr td:nth-child(2) {
+    font-weight: 500;
+    color: #EB5757
+    /* TODO: need to CAPs*
+    /* TODO: need green color if open*/
+}
+
+
+tr:nth-child(odd) {
+    background: rgba(119, 155, 231, 0.1); 
+}
+
+/* Feedback Section */ 
+.feedback {
+    margin: 60.39px auto;
+    align-items: center;
+
+    background: url('images/feedback-background.svg'); 
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 433px; 
+    width: 1270;
+}
+
+.feedback h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #091133;
+    margin-top: 109.84px;
+    margin-bottom: 64.4px;
+}
+
+.feedback .feedback-btn a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 200px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+
+    text-decoration: none;
+    background: #111B47;
+    border-radius: 2px;
+    padding: 10px 35px; /* TODO fix */ 
+    
+}
+
 /* Search Box */ 
+
+
 
 
 
