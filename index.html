@@ -6,13 +6,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>New Grads List</title>
             <link rel="stylesheet" href="styles.css">
-            <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,900' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900' rel='stylesheet' type='text/css'>
             <script type="text/javascript" src='main.js'> </script>
         </head>
         <body>
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <input type="text" placeholder="Search here..."/>
-            </div>
+            </div> -->
 
             <!-- Navigation Bar -->
             <div class="nav-container">
@@ -36,7 +36,6 @@
                             New Grad Lists
                         </div>
 
-                        
                         <div class="nav-btn-container">
                             <a href="">Subscribe Now</a>
                             <!-- 
@@ -80,56 +79,78 @@
             </div>
 
             <!-- Jobs and Table Content -->
-            <div class="jobs-content">
-                <div class="description">
-                    <h1> Internship Programs Offered </h1>
-                    <p> -description is here -</p>
+            
+                <div class="jobs-content">
+                    <div class="jobs-content-intro">
+                        <div class="jobs-image">
+                            <img src="images/jobs-content-pic.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1> Internship Programs Offered </h1>
+                            <p> 
+                                The list below provides timelines for reputable investment banks. Currently, we only list opportunities 
+                                that involve the core of investment banking, such as advisory. The timelines might not align with other 
+                                functions, such as S&T.
+                            </p>
+                            <p>
+                                The list associates each bank with its corresponding type (MM, BB, or EB) and is updated daily with the 
+                                status of each firm. Please fill out the feedback form at the bottom of the page in case anything should 
+                                be adjusted.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <table id="job-table">
+                        <tr>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Class Size</th>
+                        </tr>
+                        <script>
+                            makeTable(); 
+                        </script>
+                    </table>
                 </div>
-                <table id="job-table">
-                    <tr>
-                        <th>Company</th>
-                        <th>Status</th>
-                        <th>Class Size</th>
-                        <th>Type</th>
-                    </tr>
-                    <script>
-                        makeTable(); 
-                    </script>
-
-                    <!-- 
-                    <tr>
-                        <th>Company</th>
-                        <th>Status</th>
-                        <th>Class Size</th>
-                    </tr>
-                    <tr>
-                        <td>Goldman Sachs</td>
-                        <td>CLOSED</td>
-                        <td>200+</td>
-                        <td>BB</td>
-                    </tr>
-                    <tr>
-                        <td>Morgan Stanley</td>
-                        <td>OPEN</td>
-                        <td>300+</td>
-                        <td>BB</td>
-                    </tr>
-                    </tr>
-                    -->
-                </table>
-            </div>
+            
 
             <!-- Feedback Section -->
-            <div class="feedback">
-                <h1>Got Feedback?</h1>
-                <div class="feedback-btn">
-                    <a href="">Fill Out This Form!</a>
+            <div class="feedback-container">
+                <feedback-body>
+                    <div class="feedback-content">
+                        <h1>Got Feedback?</h1>
+                        <div class="feedback-btn">
+                            <a href="https://airtable.com/shrbnfRjcZ9P4kZbv">Fill Out This Form!</a>
+                        </div>
+                    </div>
+                </feedback-body>
+            </div>
+
+            
+            <!-- Footer -->
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                    <footer>
+                        <div class="footer-content">
+                            
+                                <div class="footer-logo">
+                                    New Grad Lists
+                                </div>
+                            
+                            
+                                <ul class="footer-items">
+                                    <li>
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Resources</a>
+                                    </li>
+                                </ul>
+                            
+                        </div>
+                            
+                        
+                    </footer>
                 </div>
             </div>
-            
-            
-
-            <!-- Footer -->
-
         </body>
     </html>

@@ -1,10 +1,48 @@
 function makeTable() {
-    // Columns: Companies, Status, Class Size, Type 
+    // Columns: Companies, Status, Type 
     // TODO: change companies to links
-    var col1 = ["Goldman Sachs","Morgan Stanley","c"]; 
-    var col2 = ["Open", "Closed", "Open"]; 
-    var col3 = ["100+", "200+", "300+"]; 
-    var col4 = ["BB", "BB", "BB"]; 
+    var col1 = [
+        "Allen & Company","Baird","Bank of America", "Barclays", "BMO Capital Markets",
+        "BNP Paribas", "BNY Mellon", "Cantor Fitzgerald", "Centerview Partners", 
+        "Citi", "Cowen", "Credit Suisse", "DC Advisory", 
+        "Deutsche", "Evercore", "Goldman Sachs", "Greenhill", "Guggenheim",
+        "Harris Williams", "Houlihan Lokey", "HSBC", "J.P. Morgan", "Jefferies",
+        "Lazard", "Lincoln", "LionTree Advisors", "Macquarie",
+        "Moelis", "Morgan Stanley", "MUFG", "Nomura", "Oppenheimer",
+        "Perella Weinberg Partners", "Piper Sandler", "PJ Solomon", "PJT Partners", 
+        "Qatalyst", "Raine Group", "Raymond James", "RBC", "Rothschild",
+        "Santander", "Scotiabank", "Societe Generale", 
+        "Stifel", "TD Securities", "Tudor, Pickering, Holt & Co.", "UBS",
+        "Union Square Advisors", "Wells Fargo", "William Blair"
+    ]; 
+    var col2 = [
+        "N/A", "Open", "N/A", "N/A", "Open",
+        "N/A", "N/A", "N/A", "N/A",
+        "Open", "Open", "N/A", "Open",
+        "Open", "Open", "N/A", "Open", "Open",
+        "N/A", "Open", "N/A", "Open", "Open",
+        "Open", "N/A", "N/A", "Closed",
+        "Closed", "Open", "N/A", "Open", "N/A", 
+        "Open", "Closed", "Open", "Closed",
+        "N/A", "Open", "N/A", "Closed", "Open",
+        "N/A", "N/A", "N/A",
+        "N/A", "Open", "Open", "N/A",
+        "Open", "N/A", "Closed"
+    ]; 
+    var col3 = [
+        "EB", "MM", "BB", "BB", "MM",
+        "MM", "MM", "MM", "EB",
+        "BB", "MM", "BB", "MM",
+        "BB", "EB", "BB", "EB", "EB",
+        "MM", "MM", "MM", "BB", "MM",
+        "EB", "MM", "EB", "MM",
+        "EB", "BB", "MM", "MM", "MM",
+        "EB", "MM", "MM", "EB", 
+        "EB", "EB", "MM", "MM", "MM",
+        "MM", "MM", "MM",
+        "MM", "MM", "EB", "BB",
+        "MM", "MM", "MM"
+    ]; 
 
     //var table = document.createElement('table');
     //var header = document.createElement('head');
@@ -17,18 +55,15 @@ function makeTable() {
         var cell1 = document.createElement('td');
         var cell2 = document.createElement('td');
         var cell3 = document.createElement('td');
-        var cell4 = document.createElement('td');
 
         var text1 = document.createTextNode(col1[i]);
         cell1.appendChild(text1);
         cell2.innerHTML = col2[i];
         cell3.innerHTML = col3[i];
-        cell4.innerHTML = col4[i];
 
         row.appendChild(cell1);
         row.appendChild(cell2);
         row.appendChild(cell3);
-        row.appendChild(cell4);
         body.appendChild(row);
     }
     //table.appendChild(header);

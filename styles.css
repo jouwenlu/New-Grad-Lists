@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans', 'Roboto';
 }
 
 /* Navigation */ 
@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav .logo {
-    font-family: 'Roboto';
+    font-family: PT Sans;
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -46,7 +46,7 @@ nav .logo {
 }
 
 .nav-items li a {
-    font-family: "Roboto"; 
+    font-family: PT Sans; 
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -72,7 +72,7 @@ header {
 }
 
 header .hero-content h1 {
-    font-family: "Roboto"; 
+    font-family: PT Sans; 
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
@@ -83,7 +83,7 @@ header .hero-content h1 {
 }
 
 header .hero-content p {
-    font-family: 'Roboto'; 
+    font-family: PT Sans; 
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -95,12 +95,11 @@ header .hero-content p {
 header .hero-btns {
     display: flex; 
     list-style-type: none;
-
 }
 
 header .hero-btns .button1 a {
     color: #FFFFFF;
-    font-family: Roboto; /*TODO fix*/ 
+    font-family: PT Sans; /*TODO fix*/ 
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
@@ -119,7 +118,7 @@ header .button1 a:hover {
 
 header .hero-btns .button2 a {
     color: #091133;
-    font-family: Roboto;
+    font-family: PT Sans;
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
@@ -131,112 +130,199 @@ header .hero-btns .button2 a {
 }
 
 /* Jobs & Table */
+
+.jobs-container {
+    
+}
+
 .jobs-content {
-    width: 1084px;
-    margin: 100px auto;
+    width: 1270px;
+    margin-bottom: 70px;
 }
 
-.jobs-content .description h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
+    .jobs-content-intro {
+        display: flex;
+        float: left;
+        justify-content: space-between;
+        
+        background: url('images/jobs-content-background.svg'); 
+        background-repeat: no-repeat; 
+        background-position: left;
+        height: 469.34px;
+        
+        }
 
-    letter-spacing: 1px;
-    color: #091133;
-    margin-bottom: 16px;
-}
+        .jobs-image {
+            margin-top: 145px;
+            margin-left: 68px;
+        }
+        .jobs-content .description {
+            width: 674px;
+            margin-top: 74px;
+            margin-left: 168.81px;
+        }
+            .jobs-content .description h1 {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 50px;
+                letter-spacing: 1.5px;
+                color: #091133;
+                margin-bottom: 24px;
+            }
 
-.jobs-content .description p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #6F7CB2;
-    margin-bottom: 71px;
-}
+            .jobs-content .description p {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                color: #222F65;
+                margin-bottom: 0; /* TODO: add space between paragraphs */
+            }
 
-.jobs-content table {
-    width: 1084px;
-}
+    .jobs-content table {
+        padding-top: 0px;
+        width: 1084px;
+        margin: 70px auto;
+    }
 
-.jobs-content table tr th {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    background: white; 
-    color: #091133;
-    text-align: left;
-}
+        .jobs-content table tr th {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            background: white; 
+            color: #505F98;
+            text-align: left;
+            padding-bottom: 18px;
+        }
 
-.jobs-content table tr td {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #6F7CB2;
-}
+        .jobs-content table tr td {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+            padding: 10px;
+        }
 
-table tr td:nth-child(2) {
-    font-weight: 500;
-    color: #EB5757
-    /* TODO: need to CAPs*
-    /* TODO: need green color if open*/
-}
+        table tr td:nth-child(2) {
+            font-weight: 500;
+            color: #EB5757
+            /* TODO: need to CAPs*
+            /* TODO: need green color if open*/
+        }
 
 
-tr:nth-child(odd) {
-    background: rgba(119, 155, 231, 0.1); 
-}
+        tr:nth-child(odd) {
+            background: rgba(119, 155, 231, 0.1); 
+        }
+
+
 
 /* Feedback Section */ 
-.feedback {
-    margin: 60.39px auto;
+.feedback-container {
+    display: flex; /* IMPORTANT */ 
     align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 38px -1px rgba(119, 155, 231, 0.25);
+    border-radius: 38px;
+    height: 174px; 
+    width: 1110px;
+    margin: auto;
 
-    background: url('images/feedback-background.svg'); 
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    height: 433px; 
-    width: 1270;
 }
 
-.feedback h1 {
-    font-family: Roboto;
+feedback-body {
+    display: vertical;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto; /* IMPORTANT */ 
+    
+    
+}
+feedback-body .feedback-content h1 {
+    font-family: PT Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 48px;
-    text-align: center;
     color: #091133;
-    margin-top: 109.84px;
-    margin-bottom: 64.4px;
 }
 
-.feedback .feedback-btn a {
-    font-family: Roboto;
+/* TODO: align button */ 
+feedback-body .feedback-content .feedback-btn a {
+    font-family: PT Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     max-width: 200px;
     line-height: 18px;
-    text-align: center;
     color: #FFFFFF;
-    display: block;
 
     text-decoration: none;
     background: #111B47;
     border-radius: 2px;
-    padding: 10px 35px; /* TODO fix */ 
-    
+    padding: 4px 35px; 
 }
 
-/* Search Box */ 
+
+/* Footer */ 
+.footer-container {
+    background: #E7ECFF;
+    height: 188px; 
+    margin-top: 39px;
+    width: 1270px;
+}
+
+.footer-container .footer-wrapper {
+    width: 638px;
+    margin-left: 80px;
+}
+
+.footer-content {
+    align-items: center;
+    justify-content: space-between;
+    height: 188px;
+}
+
+footer .footer-content ul {
+    display: flex;
+    padding-left: 0;
+    padding-top: 112px;
+    list-style: none;
+}
+
+.footer-items li {
+    margin-right: 70px;
+}
+
+.footer-items li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #929ECC;
+    text-decoration: none;
+}
+
+footer .footer-logo {
+    float: right; 
+    width: 170px;
+    padding-top: 30px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+
 
 
 
