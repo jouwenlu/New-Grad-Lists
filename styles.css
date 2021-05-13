@@ -9,18 +9,20 @@ body {
 
 /* Navigation */ 
 .nav-container {
-    height: 60px;
+    background: #EFF2FC;
+    height: 88px;
+    width: 1270px;
 }
 .wrapper {
-    width: 1110px;
-    margin: 0 auto; /* 0 for top/bottom, auto for left/right */
+    width: 639px;
+    margin-left: 81px;
 }
 
 nav {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    height: 60px;
+    height: 88px;
 }
 
 nav ul {
@@ -31,8 +33,9 @@ nav ul {
 nav .logo {
     font-family: PT Sans;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 26px;
+    line-height: 38px;
     color: #37447E;
 }
 
@@ -46,10 +49,11 @@ nav .logo {
 }
 
 .nav-items li a {
-    font-family: PT Sans; 
+    font-family: PT Sans;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
     color: #505F98;
     text-decoration: none;
 }
@@ -60,74 +64,106 @@ nav .logo {
     background-repeat: no-repeat; 
     background-position: right;
     background-size: contain;
-    height: 175vh; /*TODO fix size*/ 
+    height: 639px;
+     /*TODO original 639px, fix size*/ 
     display: flex;
     align-items: center; 
+
+    z-index: -1;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+header .hero-image {
+    margin-left: 48px;
+}
+header .hero-content {
+    width: 569px;
 }
 
 header .hero-content h1 {
     font-family: PT Sans; 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 66px;
-    letter-spacing: 1px;
+    font-style: bold;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 1.5px;
     color: #091133;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    width: 569px;
 }
 
 header .hero-content p {
     font-family: PT Sans; 
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #222F65;
+    margin-bottom: 14px;
+    width: 527px;
+}
+
+header .hero-content .subscribe {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+
+header .subscribe .text-box input[type=text] {
+    box-sizing: border-box;
+    width: 378px;
+    padding-left: 20px;
+    height: 50px;
+    background: #E7ECFF;
+    border-radius: 9px;
+    border: none;
+}
+
+header .subscribe .text-box input, textarea {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #929ECC;
+}
+
+header .subscribe .subscribe-btn {
+    background: #37447E;
+    border-radius: 9px;
+    padding: 11px 24px 9px 24px;
+    margin-left: 8px;
+    text-align: center;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    color: #505F98;
-    margin-bottom: 39px;
-}
-
-header .hero-btns {
-    display: flex; 
-    list-style-type: none;
-}
-
-header .hero-btns .button1 a {
     color: #FFFFFF;
-    font-family: PT Sans; /*TODO fix*/ 
-    font-weight: 400;
-    font-size: 16px;
     text-decoration: none;
-
-    background: #111B47;
-    border-radius: 2px;
-    padding: 10px 35px; /* TODO fix */ 
-    margin-right: calc(28.79px + 35px); /*TODO fix after changing font*/ 
-    /*display: inline-block; */
-    transition: 300ms;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-header .button1 a:hover { 
-    background-color: darkblue;
-}
+header .subscribe-btn:hover {
+    background-color: #4CAF50;
+  }
 
-header .hero-btns .button2 a {
-    color: #091133;
+header .hero-content h2 {
     font-family: PT Sans;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
-    text-decoration: none;
-    
-    border: 2px solid #091133;
-    box-sizing: border-box;
-    border-radius: 2px;
-    padding: 8px 35px; /* TODO fix */ 
+    line-height: 30px;
+    color: #505F98;
 }
+
+
+
 
 /* Jobs & Table */
 
@@ -149,7 +185,6 @@ header .hero-btns .button2 a {
         background-repeat: no-repeat; 
         background-position: left;
         height: 469.34px;
-        
         }
 
         .jobs-image {
@@ -179,7 +214,7 @@ header .hero-btns .button2 a {
                 font-size: 16px;
                 line-height: 30px;
                 color: #222F65;
-                margin-bottom: 0; /* TODO: add space between paragraphs */
+                margin-bottom: 14px; 
             }
 
     .jobs-content table {
@@ -255,6 +290,10 @@ feedback-body .feedback-content h1 {
 }
 
 /* TODO: align button */ 
+feedback-body .feedback-content .feedback-btn {
+    margin-left: 27px;
+    margin-top: 15px;
+}
 feedback-body .feedback-content .feedback-btn a {
     font-family: PT Sans;
     font-style: normal;
@@ -265,8 +304,8 @@ feedback-body .feedback-content .feedback-btn a {
     color: #FFFFFF;
 
     text-decoration: none;
-    background: #111B47;
-    border-radius: 2px;
+    background: #37447E;
+    border-radius: 6px;
     padding: 4px 35px; 
 }
 
