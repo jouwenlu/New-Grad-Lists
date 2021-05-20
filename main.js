@@ -1,3 +1,13 @@
+$("#subscribe-button").click(function() {
+    $("#subscribe-button").addClass('button-clicked');
+  });
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+    });
+});
+
 function makeTable() {
     // Columns: Companies, Status, Type 
     // TODO: change companies to links
@@ -54,6 +64,7 @@ function makeTable() {
         var row = document.createElement('tr');
         var cell1 = document.createElement('td');
         var cell2 = document.createElement('td');
+        cell2.setAttribute("status"+i, "td" + i); 
         var cell3 = document.createElement('td');
 
         var text1 = document.createTextNode(col1[i]);
@@ -61,12 +72,36 @@ function makeTable() {
         cell2.innerHTML = col2[i];
         cell3.innerHTML = col3[i];
 
+      
+
         row.appendChild(cell1);
         row.appendChild(cell2);
         row.appendChild(cell3);
         body.appendChild(row);
     }
-    //table.appendChild(header);
-    //table.appendChild(body);
     document.getElementById('job-table').appendChild(body);
 }
+
+$(document).ready(function(){
+    for (var i = 0; i < col1.length; i++) {
+        if ($("#status"+i).text === "Open") {
+            $("#status"+i).css("color", "#505F98");
+        }
+    }
+});
+
+// This will generate the text file content based on the form data
+/*
+function buildData(){
+    var txtData = $("#email-box").val();
+    return txtData;
+}
+ // This will be executed when the document is ready
+ $(function(){
+    // This will act when the submit BUTTON is clicked
+    $("#email-to-save").submit(function(event){
+        event.preventDefault();
+        var txtData = buildData();
+        window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
+    });
+}); */

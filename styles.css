@@ -5,6 +5,9 @@
 
 body {
     font-family: 'PT Sans', 'Roboto';
+    background: url('images/big-background.svg'); ;
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
 }
 
 /* Navigation */ 
@@ -59,17 +62,14 @@ nav .logo {
 }
 
 /* Header & Hero */ 
-.header-container { /* overlap background into nav bar*/
-    background: url('images/background-path.svg'); 
+.header-container { 
+    /*background: url('images/background-path.svg'); 
     background-repeat: no-repeat; 
     background-position: right;
-    background-size: contain;
+    background-size: contain; */ 
     height: 639px;
-     /*TODO original 639px, fix size*/ 
     display: flex;
     align-items: center; 
-
-    z-index: -1;
 }
 
 header {
@@ -106,13 +106,13 @@ header .hero-content p {
     width: 527px;
 }
 
-header .hero-content .subscribe {
+/* MailChimp Form */ 
+header form .mc-form {
     display: flex;
     margin-top: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
-header .subscribe .text-box input[type=text] {
+header form .mc-field-group input[type=email]{
     box-sizing: border-box;
     width: 378px;
     padding-left: 20px;
@@ -122,15 +122,14 @@ header .subscribe .text-box input[type=text] {
     border: none;
 }
 
-header .subscribe .text-box input, textarea {
+header form .mc-field-group input, textarea {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     color: #929ECC;
 }
-
-header .subscribe .subscribe-btn {
+header form .clear input[type=submit] {
     background: #37447E;
     border-radius: 9px;
     padding: 11px 24px 9px 24px;
@@ -149,9 +148,28 @@ header .subscribe .subscribe-btn {
     transition-duration: 0.4s;
 }
 
-header .subscribe-btn:hover {
+header .button-clicked {
     background-color: #4CAF50;
-  }
+}
+
+form input + .mce_inline_error {
+    width: 200px;
+    font-size: 0.75em; 
+    position: relative;
+    /*no effect */
+    margin-top: 10px;
+    background: #FFC93C;
+    color: #FFC93C;
+}
+
+form .clear .response {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #222F65;
+}
+
 
 header .hero-content h2 {
     font-family: PT Sans;
@@ -166,11 +184,6 @@ header .hero-content h2 {
 
 
 /* Jobs & Table */
-
-.jobs-container {
-    
-}
-
 .jobs-content {
     width: 1270px;
     margin-bottom: 70px;
@@ -181,9 +194,9 @@ header .hero-content h2 {
         float: left;
         justify-content: space-between;
         
-        background: url('images/jobs-content-background.svg'); 
+        /*background: url('images/jobs-content-background.svg'); 
         background-repeat: no-repeat; 
-        background-position: left;
+        background-position: left;*/
         height: 469.34px;
         }
 
@@ -193,8 +206,8 @@ header .hero-content h2 {
         }
         .jobs-content .description {
             width: 674px;
-            margin-top: 74px;
-            margin-left: 168.81px;
+            margin-top: 50px;
+            margin-left: 409px;
         }
             .jobs-content .description h1 {
                 font-family: PT Sans;
@@ -255,6 +268,10 @@ header .hero-content h2 {
 
         tr:nth-child(odd) {
             background: rgba(119, 155, 231, 0.1); 
+        }
+
+        td .green {
+            color:green; 
         }
 
 
