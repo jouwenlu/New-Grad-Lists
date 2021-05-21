@@ -379,6 +379,10 @@ footer .footer-logo {
     color: #37447E;
 }
 
+#mc_embed_signup div.mce_inline_error {
+    background-color: red !important;
+    display: none !important;
+}
 
 
 
