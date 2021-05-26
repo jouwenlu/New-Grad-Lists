@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Sans', 'Roboto';
+    background: url('../assets/images/big-background.svg'); ;
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
+}
+
+/* Navigation */ 
+.nav-container {
+    background: #EFF2FC;
+    height: 88px;
+    width: 1270px;
+}
+.wrapper {
+    width: 639px;
+    margin-left: 81px;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 88px;
+}
+
+nav ul {
+    display: flex; 
+    padding: 0; 
+}
+
+nav .logo {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+
+.nav-items li { 
+    list-style: none;
+    margin-right: 55px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0; 
+}
+
+.nav-items li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #505F98;
+    text-decoration: none;
+}
+
+/* Header & Hero */ 
+.header-container { 
+    /*background: url('images/background-path.svg'); 
+    background-repeat: no-repeat; 
+    background-position: right;
+    background-size: contain; */ 
+    height: 639px;
+    display: flex;
+    align-items: center; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header .hero-image {
+    margin-left: 48px;
+}
+header .hero-content {
+    width: 569px;
+}
+
+header .hero-content h1 {
+    font-family: PT Sans; 
+    font-style: bold;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 1.5px;
+    color: #091133;
+    margin-bottom: 30px;
+    width: 569px;
+}
+
+header .hero-content p {
+    font-family: PT Sans; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #222F65;
+    margin-bottom: 14px;
+    width: 527px;
+}
+
+/* MailChimp Form */ 
+header form .mc-form {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+header form .mc-field-group input[type=email]{
+    box-sizing: border-box;
+    width: 378px;
+    padding-left: 20px;
+    height: 50px;
+    background: #E7ECFF;
+    border-radius: 9px;
+    border: none;
+}
+
+header form .mc-field-group input, textarea {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #929ECC;
+}
+header form .clear input[type=submit] {
+    background: #37447E;
+    border-radius: 9px;
+    padding: 11px 24px 9px 24px;
+    margin-left: 8px;
+    text-align: center;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+header .button-clicked {
+    background-color: #4CAF50;
+}
+
+form input + .mce_inline_error {
+    width: 200px;
+    font-size: 0.75em; 
+    position: relative;
+    /*no effect */
+    margin-top: 10px;
+    background: #FFC93C;
+    color: #FFC93C;
+}
+
+form .clear .response {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #222F65;
+}
+
+
+header .hero-content h2 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #505F98;
+}
+
+
+
+
+/* Jobs & Table */
+.jobs-content {
+    width: 1270px;
+    margin-bottom: 70px;
+}
+
+    .jobs-content-intro {
+        display: flex;
+        float: left;
+        justify-content: space-between;
+        
+        /*background: url('images/jobs-content-background.svg'); 
+        background-repeat: no-repeat; 
+        background-position: left;*/
+        height: 469.34px;
+        }
+
+        .jobs-image {
+            margin-top: 145px;
+            margin-left: 68px;
+        }
+        .jobs-content .description {
+            width: 674px;
+            margin-top: 50px;
+            margin-left: 409px;
+        }
+            .jobs-content .description h1 {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 50px;
+                letter-spacing: 1.5px;
+                color: #091133;
+                margin-bottom: 24px;
+            }
+
+            .jobs-content .description p {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                color: #222F65;
+                margin-bottom: 14px; 
+            }
+
+    .jobs-content table {
+        padding-top: 0px;
+        width: 1084px;
+        margin: 70px auto;
+    }
+
+        .jobs-content table tr th {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            background: white; 
+            color: #505F98;
+            text-align: left;
+            padding-bottom: 18px;
+        }
+
+        .jobs-content table tr td {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+            padding: 10px;
+        }
+
+        table tr td:nth-child(2) {
+            font-weight: 500;
+            color: #EB5757
+            /* TODO: need to CAPs*
+            /* TODO: need green color if open*/
+        }
+
+
+        tr:nth-child(odd) {
+            background: rgba(119, 155, 231, 0.1); 
+        }
+
+        td .green {
+            color:green; 
+        }
+
+
+
+/* Feedback Section */ 
+.feedback-container {
+    display: flex; /* IMPORTANT */ 
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 38px -1px rgba(119, 155, 231, 0.25);
+    border-radius: 38px;
+    height: 174px; 
+    width: 1110px;
+    margin: auto;
+
+}
+
+feedback-body {
+    display: vertical;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto; /* IMPORTANT */ 
+    
+    
+}
+feedback-body .feedback-content h1 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+}
+
+/* TODO: align button */ 
+feedback-body .feedback-content .feedback-btn {
+    margin-left: 27px;
+    margin-top: 15px;
+}
+feedback-body .feedback-content .feedback-btn a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    max-width: 200px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    background: #37447E;
+    border-radius: 6px;
+    padding: 4px 35px; 
+}
+
+
+/* Footer */ 
+.footer-container {
+    background: #E7ECFF;
+    height: 188px; 
+    margin-top: 39px;
+    width: 1270px;
+}
+
+.footer-container .footer-wrapper {
+    width: 638px;
+    margin-left: 80px;
+}
+
+.footer-content {
+    align-items: center;
+    justify-content: space-between;
+    height: 188px;
+}
+
+footer .footer-content ul {
+    display: flex;
+    padding-left: 0;
+    padding-top: 112px;
+    list-style: none;
+}
+
+.footer-items li {
+    margin-right: 70px;
+}
+
+.footer-items li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #929ECC;
+    text-decoration: none;
+}
+
+footer .footer-logo {
+    float: right; 
+    width: 170px;
+    padding-top: 30px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+
+
+
+
+
+
+/* Hidden Items */ 
+
+/*
+.search-box {
+    display: none;
+} */
