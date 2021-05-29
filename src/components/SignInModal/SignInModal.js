@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Typography from "@material-ui/core/Typography";
+import { useAuth } from "../../context/AuthContext";
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -32,19 +33,41 @@ export default function SignInModal({ open, handleOpen, handleClose }) {
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
+  const [loading, setLoading] = useState(false);
+  const { signInWithGoogle, currentUser } = useAuth();
+
+  const handleGoogleSignin = () => {
+    signInWithGoogle()
+      .then(() => {
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+      });
+  };
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <Typography variant="h1" id="simple-modal-title">Welcome to NowHyring!</Typography>
-      <Typography variant="h2" id="simple-modal-description">integer posuere erat a ante venenatis dapibus posuere velit aliquet</Typography>
-      <Typography>Already have an account?<div>Log in with Google</div></Typography>
+      <Typography variant="h1" id="simple-modal-title">
+        Welcome to NowHyring!
+      </Typography>
+      <Typography variant="h2" id="simple-modal-description">
+        integer posuere erat a ante venenatis dapibus posuere velit aliquet
+      </Typography>
+      <Typography>
+        Already have an account?<div onClick={handleGoogleSignin}>Log in with Google</div>
+      </Typography>
     </div>
   );
 
   return (
     <div>
-      <Typography variant="h1" id="simple-modal-title">Welcome to NowHyring!</Typography>
-      <Typography variant="h2" id="simple-modal-description">integer posuere erat a ante venenatis dapibus posuere velit aliquet</Typography>
+      <Typography variant="h1" id="simple-modal-title">
+        {currentUser?.displayName}
+      </Typography>
+      <Typography variant="h2" id="simple-modal-description">
+        {currentUser?.email}
+      </Typography>
       <Modal
         open={open}
         onClose={handleClose}
