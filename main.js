@@ -16,7 +16,7 @@ function makeTable() {
         "BNP Paribas", "BNY Mellon", "Cantor Fitzgerald", "Centerview Partners", 
         "Citi", "Cowen", "Credit Suisse", "DC Advisory", 
         "Deutsche", "Evercore", "Goldman Sachs", "Greenhill", "Guggenheim",
-        "Harris Williams", "Houlihan Lokey", "HSBC", "J.P. Morgan", "Jefferies",
+        /*"Harris Williams",*/ "Houlihan Lokey", /*"HSBC",*/ "J.P. Morgan", "Jefferies",
         "Lazard", "Lincoln", "LionTree Advisors", "Macquarie",
         "Moelis", "Morgan Stanley", "MUFG", "Nomura", "Oppenheimer",
         "Perella Weinberg Partners", "Piper Sandler", "PJ Solomon", "PJT Partners", 
@@ -26,25 +26,25 @@ function makeTable() {
         "Union Square Advisors", "Wells Fargo", "William Blair"
     ]; 
     var col2 = [
-        "N/A", "Open", "N/A", "N/A", "Open",
-        "N/A", "N/A", "N/A", "N/A",
-        "Open", "Open", "N/A", "Open",
-        "Open", "Open", "N/A", "Open", "Open",
-        "N/A", "Open", "N/A", "Open", "Open",
-        "Open", "N/A", "N/A", "Closed",
-        "Closed", "Open", "N/A", "Open", "N/A", 
-        "Open", "Closed", "Open", "Closed",
-        "N/A", "Open", "N/A", "Closed", "Open",
-        "N/A", "N/A", "N/A",
-        "N/A", "Open", "Open", "N/A",
-        "Open", "N/A", "Closed"
+        "N/A", "Closed", "Open", "N/A", "Closed",
+        "N/A", "N/A", "N/A", "Open",
+        "Open", "Open", "Open", "Open",
+        "Open", "Closed", "N/A", "Open", "Open",
+        /*"N/A",*/ "N/A", /*"N/A",*/ "Open", "Open",
+        "Open", "Open", "Open", "Closed",
+        "Closed", "Open", "Open", "Open", "Open", 
+        "Closed", "Closed", "Open", "Open",
+        "Open", "Closed", "Open", "Closed", "N/A",
+        "Open", "Open", "Open",
+        "Open", "Open", "Open", "Open",
+        "Open", "Open", "Closed"
     ]; 
     var col3 = [
         "EB", "MM", "BB", "BB", "MM",
         "MM", "MM", "MM", "EB",
         "BB", "MM", "BB", "MM",
         "BB", "EB", "BB", "EB", "EB",
-        "MM", "MM", "MM", "BB", "MM",
+        /*"MM",*/ "MM", /*"MM",*/ "BB", "MM",
         "EB", "MM", "EB", "MM",
         "EB", "BB", "MM", "MM", "MM",
         "EB", "MM", "MM", "EB", 

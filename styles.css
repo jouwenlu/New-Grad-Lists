@@ -260,7 +260,7 @@ header .hero-content h2 {
 
         table tr td:nth-child(2) {
             font-weight: 500;
-            color: #EB5757
+            color: #000000;
             /* TODO: need to CAPs*
             /* TODO: need green color if open*/
         }
