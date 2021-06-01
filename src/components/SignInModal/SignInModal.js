@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Typography from "@material-ui/core/Typography";
+import GoogleIcon from "../../assets/icons/google.svg";
+import CloseIcon from "@material-ui/icons/Close";
 import { useAuth } from "../../context/AuthContext";
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -20,18 +18,70 @@ function getModalStyle() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  closeIconContainer: {
+    display: "flex",
+    justifyContent: "flex-end",
+    margin: theme.spacing(0, 0, 2),
+  },
+  closeIcon: {
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
   paper: {
     position: "absolute",
-    width: "40vw",
+    width: "35vw",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(2, 4, 5),
+    outline: "none",
+  },
+  header: {
+    fontSize: "33px",
+    fontWeight: "bold",
+  },
+  body: {
+    padding: theme.spacing(2, 0, 2),
+  },
+  signUpBtn: {
+    backgroundColor: theme.palette.yellow1,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: theme.spacing(1.5, 0, 1.5),
+    borderRadius: "9px",
+    margin: theme.spacing(3, 0, 3),
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  signUpBody: {
+    flex: "7",
+    fontSize: "18px",
+  },
+  signInBody: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  icon: {
+    color: theme.palette.blue5,
+    width: "20px",
+    height: "20px",
+    flex: "3",
+  },
+  logInSpan: {
+    fontWeight: "bold",
+    margin: theme.spacing(0, 1, 0),
+    padding: theme.spacing(0, 0, 0.25),
+    borderBottom: `4px solid ${theme.palette.yellow1}`,
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 }));
 
 export default function SignInModal({ open, handleOpen, handleClose }) {
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [loading, setLoading] = useState(false);
   const { signInWithGoogle, currentUser } = useAuth();
@@ -48,14 +98,29 @@ export default function SignInModal({ open, handleOpen, handleClose }) {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <Typography variant="h1" id="simple-modal-title">
-        Welcome to NowHyring!
+      <div className={classes.closeIconContainer}>
+        <CloseIcon className={classes.closeIcon} onClick={handleClose} />
+      </div>
+      <Typography variant="h1" className={classes.header} id="simple-modal-title">
+        Welcome to
       </Typography>
-      <Typography variant="h2" id="simple-modal-description">
+      <Typography variant="h1" className={classes.header} id="simple-modal-title">
+        NowHyring!
+      </Typography>
+      <Typography variant="body1" className={classes.body} id="simple-modal-description">
         integer posuere erat a ante venenatis dapibus posuere velit aliquet
       </Typography>
-      <Typography>
-        Already have an account?<div onClick={handleGoogleSignin}>Log in with Google</div>
+      <div className={classes.signUpBtn} onClick={handleGoogleSignin}>
+        <img alt="google" className={classes.icon} src={GoogleIcon} />
+        <Typography variant="body1" className={classes.signUpBody} id="simple-modal-title">
+          Sign up with Google
+        </Typography>
+      </div>
+      <Typography variant="body2" className={classes.signInBody}>
+        Already have an account?
+        <span className={classes.logInSpan} onClick={handleGoogleSignin}>
+          Login with Google
+        </span>
       </Typography>
     </div>
   );

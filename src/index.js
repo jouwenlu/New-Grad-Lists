@@ -11,6 +11,7 @@ const theme = createMuiTheme({
     blue2: "#BAC3E5",
     blue3: "#5F6EA6",
     blue4: "#37447E",
+    blue5: "#222F65",
     yellow1: "#FFC93C",
   },
   typography: {
@@ -19,15 +20,19 @@ const theme = createMuiTheme({
   overrides: {
     MuiTypography: {
       h1: {
-        fontSize: "48pt",
+        fontSize: "48px",
         color: "#091133",
       },
       h2: {
-        fontSize: "36pt",
+        fontSize: "36px",
         color: "#091133",
       },
       body1: {
-        fontSize: "16pt",
+        fontSize: "16px",
+        color: "#222F65",
+      },
+      body2: {
+        fontSize: "14px",
         color: "#222F65",
       },
     },
