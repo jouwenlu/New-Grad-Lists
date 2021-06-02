@@ -7,14 +7,14 @@ body {
     font-family: 'PT Sans', 'Roboto';
     background: url('images/big-background.svg'); ;
     background-repeat: no-repeat;
-    background-color: #e5e5e5;
+    background-color: #FAFAFA;
 }
 
 /* Navigation */ 
 .nav-container {
     background: #EFF2FC;
     height: 88px;
-    width: 1270px;
+    /*width: 1270px;*/
 }
 .wrapper {
     width: 639px;
@@ -242,7 +242,7 @@ header .hero-content h2 {
             font-weight: bold;
             font-size: 20px;
             line-height: 30px;
-            background: white; 
+            background-color: #FAFAFA;
             color: #505F98;
             text-align: left;
             padding-bottom: 18px;
