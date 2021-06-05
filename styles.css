@@ -5,32 +5,39 @@
 
 body {
     font-family: 'PT Sans', 'Roboto';
-    background: url('images/big-background.svg'); ;
-    background-repeat: no-repeat;
-    background-color: #FAFAFA;
 }
 
+
+/* LANDING PAGE */
+/*-------------------------------------------------------------------*/
+.landing-page {
+    background: url('images/landing/big-background.svg'); ;
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+    background-position: center top;
+}
 /* Navigation */ 
 .nav-container {
     background: #EFF2FC;
     height: 88px;
-    /*width: 1270px;*/
 }
 .wrapper {
-    width: 639px;
-    margin-left: 81px;
+    width: 1270px;
+    margin: auto;
+
 }
 
 nav {
     display: flex;
     align-items: center; 
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     height: 88px;
 }
 
 nav ul {
     display: flex; 
     padding: 0; 
+    margin-left: 79px;
 }
 
 nav .logo {
@@ -40,6 +47,7 @@ nav .logo {
     font-size: 26px;
     line-height: 38px;
     color: #37447E;
+    margin-left: 288px;
 }
 
 .nav-items li { 
@@ -63,10 +71,6 @@ nav .logo {
 
 /* Header & Hero */ 
 .header-container { 
-    /*background: url('images/background-path.svg'); 
-    background-repeat: no-repeat; 
-    background-position: right;
-    background-size: contain; */ 
     height: 639px;
     display: flex;
     align-items: center; 
@@ -77,16 +81,15 @@ header {
     align-items: center;
 }
 
-header .hero-image {
-    margin-left: 48px;
-}
 header .hero-content {
     width: 569px;
+    margin-left: 81px;
 }
 
 header .hero-content h1 {
     font-family: PT Sans; 
-    font-style: bold;
+    font-style: normal;
+    font-weight: bold;
     font-size: 48px;
     line-height: 65px;
     letter-spacing: 1.5px;
@@ -170,6 +173,12 @@ form .clear .response {
     color: #222F65;
 }
 
+#mc_embed_signup div.mce_inline_error {
+    background-color: #FFC93C !important;
+    color: black; 
+    /*display: none !important; */
+}
+
 
 header .hero-content h2 {
     font-family: PT Sans;
@@ -187,16 +196,13 @@ header .hero-content h2 {
 .jobs-content {
     width: 1270px;
     margin-bottom: 70px;
+    margin: auto;
 }
 
     .jobs-content-intro {
         display: flex;
         float: left;
         justify-content: space-between;
-        
-        /*background: url('images/jobs-content-background.svg'); 
-        background-repeat: no-repeat; 
-        background-position: left;*/
         height: 469.34px;
         }
 
@@ -332,18 +338,18 @@ feedback-body .feedback-content .feedback-btn a {
     background: #E7ECFF;
     height: 188px; 
     margin-top: 39px;
-    width: 1270px;
+    
 }
 
 .footer-container .footer-wrapper {
-    width: 638px;
-    margin-left: 80px;
+    width: 1270px;
+    margin: auto;
 }
 
 .footer-content {
     align-items: center;
-    justify-content: space-between;
     height: 188px;
+    margin-left: 80px;
 }
 
 footer .footer-content ul {
@@ -370,7 +376,8 @@ footer .footer-logo {
     float: right; 
     width: 170px;
     padding-top: 30px;
-
+    margin-right: 540px;
+    
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
@@ -380,13 +387,1129 @@ footer .footer-logo {
 }
 
 
+/*-------------------------------------------------------------------*/
+
+/* Resources */
+
+.resources-header-container h1{
+    margin: auto;
+    position: absolute;
+    height: 65px;
+    left: 526px;
+    right: 527px;
+    top: 178px;
+    height: 65px;
+    width: 217px;
+    /* Remember that it is important to include height and width. 
+    Found by scrolling over text and seeing the ?? x ?? below 
+    the text box */
+    
+    /* Heading_PT Sans_Bold */
+    
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 1.5px;
+    color: #091133;
+}
+
+.resources-header-container p{
+    /* Title */
+    margin: auto;
+
+    position: absolute;
+    height: 60px;
+    left: 243px;
+    right: 243px;
+    top: 285px;
+    height: 60px;
+    width: 784px;
+    /* Remember that it is important to include height and width. 
+    Found by scrolling over text and seeing the ?? x ?? below 
+    the text box */
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #222F65;
+}
+
+.resources-header-container .resources-image {
+    /* Vector */
+
+    position: absolute;
+    width: 91.12px;
+    height: 142.03px;
+    left: 517.5px;
+    top: 148px;
+    /* background: #E7ECFF; */
+
+}
+
+ /* Websites and Subscriptions */
+
+.websites-subscriptions-content .description h1 {
+    margin: auto;
+    position: absolute;
+    left: 109px;
+    right: 704px;
+    top: 406px;
+    height: 51px;
+    width: 500px;
+    
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    /* identical to box height, or 140% */
+    
+    letter-spacing: 1.5px;
+    
+    /* Colour/Main/Blue/900 */
+    
+    color: #091133;
+
+}
+
+.websites-subscriptions-content .description .wsBar {
+    position: absolute;
+    width: 457px;
+    height: 7px;
+    left: 172.5px;
+    top: 450px;
+
+}
+
+.websites-subscriptions-content .description p1 {
+    margin: auto;
+    
+    position: absolute;
+    height: 40px;
+    left: 62.5px;
+    right: 711px;
+    top: 481px;
+    height: 40px;
+    width: 451px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+
+    color: #222F65;
+
+}
+
+.websites-subscriptions-content .description .mAndI {
+    /* Body */
+
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    left: 144px;
+    right: 912px;
+    top: 555px;
+    width: 214px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.websites-subscriptions-content .description p2 {
+    margin: auto;
+    position: absolute;
+    height: 138px;
+    left: 146px;
+    right: 708px;
+    top: 585px;
+    height: 138px;
+    width: 416px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+}
+
+.websites-subscriptions-content .description .bullet1 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 192.5px;
+    top: 560px;
+    
+}
+
+.websites-subscriptions-content .description .wsRectangle {
+    position: absolute;
+    width: 479px;
+    height: 362px;
+    left: 172.5px;
+    top: 532px;
+    
+    border-radius: 20px;
+ }
+
+
+ .websites-subscriptions-content .description .mB {
+
+    margin: auto;
+    /* Body */
+
+
+    position: absolute;
+    height: 30px;
+    left: 146px;
+    right: 1027px;
+    top: 729px;
+    width: 97px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.websites-subscriptions-content .description p3 {
+    margin: auto;
+   /* Body */
+
+
+    position: absolute;
+    height: 112px;
+    left: 146px;
+    right: 708px;
+    top: 759px;
+    width: 416px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+}
+
+.websites-subscriptions-content .description .bullet2 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 192.5px;
+    top: 734px;
+    
+}
+
+
+
+ /* Interview Preparation */
+ .interview-preparation-content .description h1 {
+    margin: auto;
+    position: absolute;
+    height: 51px;
+    left: 71.5px;
+    right: 798px;
+    top: 922px;
+    width: 370px;
+    
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    /* identical to box height, or 140% */
+    
+    letter-spacing: 1.5px;
+    
+    /* Colour/Main/Blue/900 */
+    
+    color: #091133;
+ }
+
+ .interview-preparation-content .description .ipBar {
+    position: absolute;
+    width: 363px;
+    height: 7px;
+    left: 172.5px;
+    top: 966px;
+ }
+
+ .interview-preparation-content .description p1 {
+    margin: auto;
+    /* Body */
+
+
+    position: absolute;
+    height: 40px;
+    left: 63.5px;
+    right: 708px;
+    top: 995px;
+    width:452px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+
+    color: #222F65;
+
+ }
+
+ .interview-preparation-content .description p2 {
+    margin: auto;
+    /* Title */
+
+
+    position: absolute;
+    height: 69px;
+    left: 711px;
+    right: 155px;
+    top: 1352px;
+    height: 69px;
+    width: 404px;
+    /* Remember that it is important to include height and width. 
+    Found by scrolling over text and seeing the ?? x ?? below 
+    the text box */
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description .ipRectangle {
+
+    position: absolute;
+    width: 479px;
+    height: 914px;
+    left: 172.5px;
+    top: 1046px;
+    
+    border-radius: 20px;
+}
+
+.interview-preparation-content .description .wsoTG {
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    left: 144px;
+    right: 980px;
+    top: 1075px;
+    width: 146px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description p2 {
+    margin: auto;
+    position: absolute;
+    height: 175px;
+    left: 145px;
+    right: 708px;
+    top: 1105px;
+    width:417px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description .bullet1 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 190.5px;
+    /* Subtract 6 from top for correct bullet point placement, ex. this was originally 1085px */
+    top: 1079px;
+    
+}
+
+.interview-preparation-content .description .miG {
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    left: 144px;
+    right: 1052px;
+    top: 1286px;
+    width: 74px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description p3 {
+    margin: auto;
+    position: absolute;
+    height: 245px;
+    left: 145px;
+    right: 708px;
+    top: 1316px;
+    width: 417px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description .bullet2 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 190.5px;
+    top: 1290px;
+}
+
+
+.interview-preparation-content .description .wsoBG {
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    left: 144px;
+    right: 972px;
+    top: 1569px;
+    width: 154px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+}
+
+.interview-preparation-content .description p4 {
+    margin: auto;
+    position: absolute;
+    height: 164px;
+    left: 145px;
+    right: 708px;
+    top: 1599px;
+    width: 417px;
+    
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+    
+    
+    color: #222F65;
+    
+
+
+}
+
+.interview-preparation-content .description .bullet3 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 190.5px;
+    top: 1573px;
+
+}
+
+
+.interview-preparation-content .description .wsoNG {
+    margin: auto;
+/* Body */
+
+
+    position: absolute;
+    height: 30px;
+    left: 144px;
+    right: 966px;
+    top: 1769px;
+    width: 160px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.interview-preparation-content .description p5 {
+    margin: auto;
+    position: absolute;
+    height: 138px;
+    left: 145px;
+    right: 708px;
+    top: 1799px;
+    width: 417px;
+    
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 144% */
+    
+    
+    color: #222F65;
+
+
+}
+
+.interview-preparation-content .description .bullet4 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 190.5px;
+    top: 1773px;
+
+}
 
 
 
 
-/* Hidden Items */ 
+/* Books */
 
-/*
-.search-box {
-    display: none;
-} */
+.books-content .description h1 {
+    margin: auto;
+    position: absolute;
+    height: 51px;
+    left: 636.5px;
+    right: 488px;
+    top: 405px;
+    width: 99px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 1.5px;
+
+    /* Colour/Main/Blue/900 */
+
+    color: #091133;
+
+}
+
+.books-content .description .bBar {
+    /* Rectangle 27 */
+
+
+    position: absolute;
+    width: 99px;
+    height: 7px;
+    left: 745.5px;
+    top: 450px;
+
+
+}
+
+.books-content .description p1 {
+    margin: 0 auto;
+    position: absolute;
+    height: 40px;
+    left: 636.5px;
+    right: 133px;
+    top: 481px;
+    width: 455px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+
+    color: #222F65;
+
+}
+
+
+.books-content .description .bRectangle {
+    position: absolute;
+    width: 480px;
+    height: 520px;
+    left: 745.5px;
+    top: 532px;
+
+    border-radius: 20px;
+ }
+
+
+ .books-content .description .ibBook {
+    margin: 0 auto;
+    position: absolute;
+    height: 63px;
+    left: 718px;
+    right: 137px;
+    top: 555px;
+    width: 430px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.books-content .description p2 {
+    margin: 0 auto;
+    position: absolute;
+    height: 92px;
+    left: 719px;
+    right: 152px;
+    top: 618px;
+    width: 399px;
+    
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+    
+    
+    color: #222F65;
+
+}
+
+.books-content .description .bullet1 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 559px;
+
+    
+}
+
+
+.books-content .description .ddaBook {
+    margin: 0 auto;
+    position: absolute;
+    height: 30px;
+    left: 718px;
+    right: 133px;
+    top: 716px;
+    width: 419px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+}
+
+.books-content .description p3 {
+    margin: 0 auto;
+    position: absolute;
+    height: 69px;
+    left: 718px;
+    right: 153px;
+    top: 746px;
+    width: 399px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+}
+
+.books-content .description .bullet2 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 721px;
+
+    
+}
+
+
+.books-content .description .tiiBook {
+    margin: 0 auto;
+    position: absolute;
+    height: 29px;
+    left: 718px;
+    right: 133px;
+    top: 821px;
+    width: 419px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+
+}
+
+.books-content .description p4 {
+    margin: 0 auto;
+    position: absolute;
+    height: 69px;
+    left: 719px;
+    right: 134px;
+    top: 878px;
+    width: 417px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+}
+
+.books-content .description .bullet3 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 825px;
+
+}
+
+
+.books-content .description .lpBook {
+    margin: 0 auto;
+    position: absolute;
+    height: 30px;
+    left: 718px;
+    right: 472px;
+    top: 953px;
+    width: 100px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    font-feature-settings: 'ordn' on, 'kern' off;
+
+    color: #222F65;
+
+
+}
+
+.books-content .description p5 {
+    margin: 0 auto;
+    position: absolute;
+    height: 46px;
+    left: 719px;
+    right: 150px;
+    top: 983px;
+    width: 401px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+}
+
+.books-content .description .bullet4 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 957px;
+
+}
+
+
+
+
+/* Resume Reviews and Networking Calls */
+
+.resume-networking-content .description h1 {
+    margin: 0 auto;
+    position: absolute;
+    height: 87px;
+    left: 636.5px;
+    right: 238px;
+    top: 1080px;
+    width: 349px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    /* or 121% */
+
+    letter-spacing: 1.5px;
+
+    /* Colour/Main/Blue/900 */
+
+    color: #091133;
+
+
+}
+
+.resume-networking-content .description .rrncBar {
+    position: absolute;
+    width: 344px;
+    height: 7px;
+    left: 745.5px;
+    top: 1167px;
+
+
+}
+
+.resume-networking-content .description p1 {
+    margin: 0 auto;
+    position: absolute;
+    height: 20px;
+    left: 636.5px;
+    right: 189px;
+    top: 1196px;
+    width: 398px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+
+    color: #222F65;
+
+
+}
+
+
+.resume-networking-content .description .rrncRectangle {
+    position: absolute;
+    width: 480px;
+    height: 129px;
+    left: 745.5px;
+    top: 1238px;
+
+
+    border-radius: 20px;
+ }
+
+
+ .resume-networking-content .description p2 {
+    margin: 0 auto;
+    position: absolute;
+    height: 92px;
+    left: 720px;
+    right: 134px;
+    top: 1257px;
+    width: 420px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+}
+
+
+
+/* Communities */
+
+.communities-content .description h1 {
+    margin: 0 auto;
+    /* Title */
+
+
+    position: absolute;
+    height: 51px;
+    left: 636.5px;
+    right: 366px;
+    top: 1395px;
+    width: 216px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 1.5px;
+
+    /* Colour/Main/Blue/900 */
+
+    color: #091133;
+
+}
+
+.communities-content .description .cBar {
+    position: absolute;
+    width: 221px;
+    height: 7px;
+    left: 745.5px;
+    top: 1442px;
+}
+
+.communities-content .description p1 {
+    margin: 0 auto;
+    position: absolute;
+    height: 40px;
+    left: 636.5px;
+    right: 134px;
+    top: 1470px;
+    width: 453px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+
+    color: #222F65;
+
+
+}
+
+
+.communities-content .description .cRectangle {
+    position: absolute;
+    width: 480px;
+    height: 297px;
+    left: 744.5px;
+    top: 1521px;
+
+    border-radius: 20px;
+ }
+
+
+ .communities-content .description .wso {
+    margin: 0 auto;
+    position: absolute;
+    height: 30px;
+    left: 719px;
+    right: 140px;
+    top: 1544px;
+    width: 411px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+
+
+}
+
+.communities-content .description p2 {
+    margin: 0 auto;
+    position: absolute;
+    height: 92px;
+    left: 720px;
+    right: 134px;
+    top: 1574px;
+    width: 416px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+
+}
+
+.communities-content .description .bullet1 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 1548px;
+}
+
+
+
+.communities-content .description .reddit {
+    margin: 0 auto;
+    position: absolute;
+    height: 30px;
+    left: 719px;
+    right: 140px;
+    top: 1673px;
+    width: 411px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    color: #222F65;
+
+
+
+}
+
+.communities-content .description p3 {
+    margin: 0 auto;
+    position: absolute;
+    height: 92px;
+    left: 720px;
+    right: 134px;
+    top: 1703px;
+    width: 416px;
+
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+
+
+    color: #222F65;
+
+
+
+}
+
+.communities-content .description .bullet2 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 764.5px;
+    top: 1677px;
+
+}
