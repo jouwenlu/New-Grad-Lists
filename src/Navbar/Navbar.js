@@ -1,17 +1,28 @@
 import React from "react";
 import SignInModal from "../components/SignInModal";
+import WelcomeModal from "../components/WelcomeModal";
 import "./Navbar.css";
 
 function Navbar() {
-  const [openModal, setModalOpen] = React.useState(true);
+  const [openSignInModal, setSignInModalOpen] = React.useState(false);
+  const [openWelcomeModal, setWelcomeModalOpen] = React.useState(false);
 
-  const handleModalOpen = () => {
-    setModalOpen(true);
+  const handleSignInModalOpen = () => {
+    setSignInModalOpen(true);
   };
 
-  const handleModalClose = () => {
-    setModalOpen(false);
+  const handleSignInModalClose = () => {
+    setSignInModalOpen(false);
   };
+
+  const handleWelcomeModalOpen = () => {
+    setWelcomeModalOpen(true);
+  };
+
+  const handleWelcomeModalClose = () => {
+    setWelcomeModalOpen(false);
+  };
+
   return (
     <div className="nav-container">
       <div className="wrapper">
@@ -25,7 +36,9 @@ function Navbar() {
               <a href="">Resources</a>
             </li>
             <li>
-              <div href="" onClick={handleModalOpen}>Login</div>
+              <div href="" onClick={handleSignInModalOpen}>
+                Login
+              </div>
             </li>
             <li>
               <div href="">Sign up</div>
@@ -33,7 +46,8 @@ function Navbar() {
           </ul>
         </nav>
       </div>
-      <SignInModal open={openModal} handleClose={handleModalClose}/>
+      <SignInModal open={openSignInModal} handleClose={handleSignInModalClose} onSuccess={handleWelcomeModalOpen} />
+      <WelcomeModal open={openWelcomeModal} handleClose={handleWelcomeModalClose} />
     </div>
   );
 }

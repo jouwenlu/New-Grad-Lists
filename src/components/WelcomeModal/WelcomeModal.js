@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   closeIconContainer: {
     display: "flex",
     justifyContent: "flex-end",
-    margin: theme.spacing(2, 0, 3),
+    margin: theme.spacing(2, 0, 8),
   },
   closeIcon: {
     "&:hover": {
@@ -47,60 +47,27 @@ const useStyles = makeStyles((theme) => ({
   body: {
     padding: theme.spacing(2, 0, 2),
   },
-  signUpBtn: {
+  goBtn: {
     backgroundColor: theme.palette.yellow1,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     padding: theme.spacing(1.5, 0, 1.5),
     borderRadius: "9px",
-    margin: theme.spacing(3, 0, 3),
+    margin: theme.spacing(5, 0, 3),
     "&:hover": {
       cursor: "pointer",
     },
   },
-  signUpBody: {
-    flex: "7",
+  goBody: {
     fontSize: "18px",
-  },
-  signInBody: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  icon: {
-    color: theme.palette.blue5,
-    width: "20px",
-    height: "20px",
-    flex: "3",
-  },
-  logInSpan: {
     fontWeight: "bold",
-    margin: theme.spacing(0, 1, 0),
-    padding: theme.spacing(0, 0, 0.25),
-    borderBottom: `4px solid ${theme.palette.yellow1}`,
-    "&:hover": {
-      cursor: "pointer",
-    },
   },
 }));
 
-export default function SignInModal({ open, handleOpen, handleClose, onSuccess }) {
+export default function WelcomeModal({ open, handleOpen, handleClose }) {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
-  const [loading, setLoading] = useState(false);
-  const { signInWithGoogle, currentUser } = useAuth();
-
-  const handleGoogleSignin = () => {
-    signInWithGoogle()
-      .then(() => {
-        setLoading(false);
-        onSuccess();
-        handleClose();
-      })
-      .catch((error) => {
-        setLoading(false);
-      });
-  };
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
@@ -108,31 +75,23 @@ export default function SignInModal({ open, handleOpen, handleClose, onSuccess }
         <CloseIcon className={classes.closeIcon} onClick={handleClose} />
       </div>
       <Typography variant="h1" className={classes.header} id="simple-modal-title">
-        Welcome to
-      </Typography>
-      <Typography variant="h1" className={classes.header} id="simple-modal-title">
-        NowHyring!
+        Welcome!
       </Typography>
       <Typography variant="body1" className={classes.body} id="simple-modal-description">
-        integer posuere erat a ante venenatis dapibus posuere velit aliquet
+        You are now part of the NowHyring community! Ready to get started?
       </Typography>
-      <div className={classes.signUpBtn} onClick={handleGoogleSignin}>
-        <img alt="google" className={classes.icon} src={GoogleIcon} />
-        <Typography variant="body1" className={classes.signUpBody} id="simple-modal-title">
-          Sign up with Google
+      <div className={classes.goBtn} onClick={handleClose}>
+        <Typography variant="body1" className={classes.goBody} id="simple-modal-title">
+          Let's go!
         </Typography>
       </div>
-      <Typography variant="body2" className={classes.signInBody}>
-        Already have an account?
-        <span className={classes.logInSpan} onClick={handleGoogleSignin}>
-          Login with Google
-        </span>
-      </Typography>
     </div>
   );
 
   return (
     <div>
+      <Typography variant="h1" id="simple-modal-title"></Typography>
+      <Typography variant="h2" id="simple-modal-description"></Typography>
       <Modal
         open={open}
         onClose={handleClose}
