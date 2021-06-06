@@ -10,6 +10,7 @@ body {
     margin: 0px;
     padding: 0px;
     /*overflow-x: hidden;*/
+    background-color: #FAFAFA;
 }
 
 
@@ -18,13 +19,15 @@ body {
 .landing-page {
     background: url('images/landing/big-background.svg'); ;
     background-repeat: no-repeat;
-    background-color: #FAFAFA;
+    
     background-position: center top;
 }
 /* Navigation */ 
 .nav-container {
     background: #EFF2FC;
     height: 88px;
+    width: 100%;
+    background-size: cover;
 }
 .wrapper {
     width: 1270px;
