@@ -1,6 +1,8 @@
 import React from "react";
 import SignInModal from "../components/SignInModal";
 import WelcomeModal from "../components/WelcomeModal";
+import Typography from "@material-ui/core/Typography";
+import Logo from "../assets/images/logo.svg";
 import "./Navbar.css";
 
 function Navbar() {
@@ -27,21 +29,27 @@ function Navbar() {
     <div className="nav-container">
       <div className="wrapper">
         <nav>
-          <div className="logo">NowHyring</div>
+          <img src={Logo} alt="logo" className="nav-logo" />
           <ul className="nav-items">
             <li>
-              <a href="">Home</a>
+              <Typography variant="body1" className="bold">
+                Companies Hiring
+              </Typography>
             </li>
             <li>
-              <a href="">Resources</a>
+              <Typography variant="body1" className="bold">
+                Resources
+              </Typography>
             </li>
             <li>
-              <div href="" onClick={handleSignInModalOpen}>
+              <Typography variant="body1" onClick={handleSignInModalOpen}>
                 Login
-              </div>
+              </Typography>
             </li>
             <li>
-              <div href="">Sign up</div>
+              <Typography variant="body1" className="nav-outline-btn">
+                Sign up
+              </Typography>
             </li>
           </ul>
         </nav>

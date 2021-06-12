@@ -12,6 +12,7 @@ const theme = createMuiTheme({
     blue3: "#5F6EA6",
     blue4: "#37447E",
     blue5: "#222F65",
+    blue6: "#091133",
     yellow1: "#FFC93C",
   },
   typography: {

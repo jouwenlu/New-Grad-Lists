@@ -1,5 +1,6 @@
 // import "./App.css";
 import Navbar from "../Navbar";
+import LandingPage from "../pages/LandingPage";
 import { AuthProvider } from "../context/AuthContext";
 import { useState, useEffect } from "react";
 
@@ -34,7 +35,8 @@ function App() {
   return (
     <AuthProvider>
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
+        <LandingPage/>
       </div>
     </AuthProvider>
   );
