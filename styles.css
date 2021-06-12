@@ -427,6 +427,9 @@ footer .footer-logo {
     nav ul {margin-left: 10% }
     nav .logo {margin-left: 20%;}
     .nav-items li { margin-right: 20%;}
+    header .hero-content {
+        margin-left:10%;
+    }
     header .hero-image {display: none;}
     header form .mc-field-group input[type=email]{
         width: 95%;}
@@ -436,7 +439,7 @@ footer .footer-logo {
     .jobs-image { display: none;}
     .jobs-container .description {
         width: 70%;
-        margin-left: 15%;}
+        margin-left: 10%;}
 }
 /* 500% zoom */ 
 @media only screen and (max-width: 320px) {
