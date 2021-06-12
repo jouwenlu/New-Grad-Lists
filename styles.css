@@ -9,16 +9,12 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden; /*removes scrolling feature*/ 
     background-color: #FAFAFA;
 }
 /* LANDING PAGE */
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-.landing-page {
-    /*background: url('images/landing/big-background.svg'); */
-    background-repeat: no-repeat;
-    background-position: center top;
-}
+
 
 /* Navigation */ 
 .nav-container {
