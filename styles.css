@@ -24,19 +24,17 @@ body {
 .nav-container {
     background: #EFF2FC;
     height: 88px;
-    min-width: 1270px;
-    width: 100%;
-    background-size: cover;
+    /*min-width: 1270px;*/ /* only for scrolling feature*/
 }
 .wrapper {
-    width: 1270px;
+    width: 100%;
+    max-width: 1270px;
     margin: auto;
 }
 
 nav {
     display: flex;
     align-items: center; 
-    /*justify-content: space-between;*/
     height: 88px;
 }
 
@@ -53,7 +51,7 @@ nav .logo {
     font-size: 26px;
     line-height: 38px;
     color: #37447E;
-    margin-left: 288px;
+    margin-left: 25%;
 }
 
 .nav-items li { 
@@ -77,32 +75,34 @@ nav .logo {
 
 /* Header & Hero */ 
 .header-container { 
-    display: inline;
     display: flex;
     align-items: center; 
 }
 .header-wrapper {
-    height: 639px;
     margin-top: 30px;
     width: 1270px;
     margin: auto;
 }
 
-header {
+.header-wrapper header {
     display: flex;
     align-items: center;
 }
 
 header .hero-content {
-    
-    width: 100%;
     margin-left: 80px;
 }
 
 header .hero-image {
-    display: block;
-    margin-left: 0px;
-    float: left;
+    width: auto; 
+}
+
+header .hero-image img {
+    width: 140%;
+    height: auto;
+    margin-left: -30%;
+    margin-top: 30px;
+    margin-bottom: -100px;
 }
 
 header .hero-content h1 {
@@ -114,7 +114,8 @@ header .hero-content h1 {
     letter-spacing: 1.5px;
     color: #091133;
     margin-bottom: 30px;
-    width: 569px;
+    /*width: 569px;*/
+    width: 80%;
 }
 
 header .hero-content p {
@@ -125,7 +126,8 @@ header .hero-content p {
     line-height: 30px;
     color: #222F65;
     margin-bottom: 14px;
-    width: 527px;
+    /*width: 527px;*/
+    width: 80%;
 }
 
 /* MailChimp Form */ 
@@ -136,7 +138,8 @@ header form .mc-form {
 }
 header form .mc-field-group input[type=email]{
     box-sizing: border-box;
-    width: 378px;
+    /*width: 378px;*/
+    width: 130%;
     padding-left: 20px;
     height: 50px;
     background: #E7ECFF;
@@ -157,6 +160,7 @@ header form .clear input[type=submit] {
     padding: 11px 24px 9px 24px;
     margin-left: 8px;
     text-align: center;
+    margin-left: 60%;
 
     font-family: PT Sans;
     font-style: normal;
@@ -175,7 +179,7 @@ header .button-clicked {
 }
 
 form input + .mce_inline_error {
-    width: 200px;
+    width: 60%;
     font-size: 0.75em; 
     position: relative;
     /*no effect */
@@ -209,27 +213,36 @@ header .hero-content h2 {
 
 
 /* Jobs & Table */
-.jobs-content {
-    width: 1270px;
-    margin: auto;
+.jobs-container {
+    display: flex;
+    align-items: center; 
 }
 
-    .jobs-content-intro {
-        display: flex;
-        float: left;
-        justify-content: space-between;
-        height: 469.34px;
+    .jobs-wrapper {
+        width: 1270px;
+        margin: auto;
+    }
+        .jobs-wrapper header {
+            display: flex;
+            align-items: center;
         }
 
-        .jobs-image {
+        header .jobs-image {
+            width: 25%;
+        }  
+        header .jobs-image img {
+            width: 100%;
+            height: auto;
+            
         }
 
-        .jobs-content .description {
-            width: 674px;
+        .jobs-container .description {
+            width: 55%; 
             margin-top: 50px;
-            margin-left: 168.81px;
+            /*margin-left: 168.81px;*/
+            margin-left: 10%;
         }
-            .jobs-content .description h1 {
+            .jobs-container .description h1 {
                 font-family: PT Sans;
                 font-style: normal;
                 font-weight: bold;
@@ -240,14 +253,14 @@ header .hero-content h2 {
                 margin-bottom: 24px;
             }
 
-            .jobs-content .description p {
+            .jobs-container .description p {
                 font-family: PT Sans;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 30px;
                 color: #222F65;
-                margin-bottom: 14px; 
+                
             }
 
 .table-container table {
@@ -355,12 +368,12 @@ feedback-body .feedback-content .feedback-btn a {
     background: #E7ECFF;
     height: 188px; 
     margin-top: 39px;
-    min-width: 1270px;
-    width: 100%;
+    /*min-width: 1270px;*/
 }
 
 .footer-container .footer-wrapper {
-    width: 1270px;
+    width: 100%;
+    max-width: 1270px;
     margin: auto;
 }
 
@@ -394,7 +407,8 @@ footer .footer-logo {
     float: right; 
     width: 170px;
     padding-top: 30px;
-    margin-right: 540px;
+    /*margin-right: 540px;*/
+    margin-right: 45%;
     
     font-family: PT Sans;
     font-style: normal;
@@ -421,8 +435,8 @@ footer .footer-logo {
         margin-left: 40px; }
     header .hero-content h1 {width: 430px;}
     header .hero-content p { width: 430px; }
-    header form .mc-field-group input[type=email]{
-        width: 300px; }
+    /*header form .mc-field-group input[type=email]{
+        width: 300px; }*/
     .jobs-image { display: none;}
     .jobs-content .description {
         width: 430px;
