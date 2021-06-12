@@ -12,27 +12,25 @@ body {
     /*overflow-x: hidden;*/
     background-color: #FAFAFA;
 }
-
-
 /* LANDING PAGE */
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 .landing-page {
-    background: url('images/landing/big-background.svg'); ;
+    /*background: url('images/landing/big-background.svg'); */
     background-repeat: no-repeat;
-    
     background-position: center top;
 }
+
 /* Navigation */ 
 .nav-container {
     background: #EFF2FC;
     height: 88px;
+    min-width: 1270px;
     width: 100%;
     background-size: cover;
 }
 .wrapper {
     width: 1270px;
     margin: auto;
-
 }
 
 nav {
@@ -45,7 +43,7 @@ nav {
 nav ul {
     display: flex; 
     padding: 0; 
-    margin-left: 79px;
+    margin-left: 80px;
 }
 
 nav .logo {
@@ -79,9 +77,15 @@ nav .logo {
 
 /* Header & Hero */ 
 .header-container { 
-    height: 639px;
+    display: inline;
     display: flex;
     align-items: center; 
+}
+.header-wrapper {
+    height: 639px;
+    margin-top: 30px;
+    width: 1270px;
+    margin: auto;
 }
 
 header {
@@ -90,8 +94,15 @@ header {
 }
 
 header .hero-content {
-    width: 569px;
-    margin-left: 81px;
+    
+    width: 100%;
+    margin-left: 80px;
+}
+
+header .hero-image {
+    display: block;
+    margin-left: 0px;
+    float: left;
 }
 
 header .hero-content h1 {
@@ -187,7 +198,6 @@ form .clear .response {
     /*display: none !important; */
 }
 
-
 header .hero-content h2 {
     font-family: PT Sans;
     font-style: normal;
@@ -198,12 +208,9 @@ header .hero-content h2 {
 }
 
 
-
-
 /* Jobs & Table */
 .jobs-content {
     width: 1270px;
-    margin-bottom: 70px;
     margin: auto;
 }
 
@@ -215,13 +222,12 @@ header .hero-content h2 {
         }
 
         .jobs-image {
-            margin-top: 145px;
-            margin-left: 68px;
         }
+
         .jobs-content .description {
             width: 674px;
             margin-top: 50px;
-            margin-left: 409px;
+            margin-left: 168.81px;
         }
             .jobs-content .description h1 {
                 font-family: PT Sans;
@@ -244,49 +250,51 @@ header .hero-content h2 {
                 margin-bottom: 14px; 
             }
 
-    .jobs-content table {
-        padding-top: 0px;
-        width: 1084px;
-        margin: 70px auto;
+.table-container table {
+    padding-top: 0px;
+    width: 85%;
+    max-width: 1084px;
+    margin: 70px auto;
+    display: table;
+}
+
+    .table-container table tr th {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        background-color: #FAFAFA;
+        color: #505F98;
+        text-align: left;
+        padding-bottom: 18px;
     }
 
-        .jobs-content table tr th {
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 30px;
-            background-color: #FAFAFA;
-            color: #505F98;
-            text-align: left;
-            padding-bottom: 18px;
-        }
+    .table-container table tr td {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        padding: 10px;
+    }
 
-        .jobs-content table tr td {
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 30px;
-            color: #000000;
-            padding: 10px;
-        }
-
-        table tr td:nth-child(2) {
-            font-weight: 500;
-            color: #000000;
-            /* TODO: need to CAPs*
-            /* TODO: need green color if open*/
-        }
+    table tr td:nth-child(2) {
+        font-weight: 500;
+        color: #000000;
+        /* TODO: need to CAPs*
+        /* TODO: need green color if open*/
+    }
 
 
-        tr:nth-child(odd) {
-            background: rgba(119, 155, 231, 0.1); 
-        }
+    tr:nth-child(odd) {
+        background: rgba(119, 155, 231, 0.1); 
+    }
 
-        td .green {
-            color:green; 
-        }
+    td .green {
+        color:green; 
+    }
 
 
 
@@ -298,7 +306,8 @@ header .hero-content h2 {
     box-shadow: 0px 7px 38px -1px rgba(119, 155, 231, 0.25);
     border-radius: 38px;
     height: 174px; 
-    width: 1110px;
+    width: 85%;
+    max-width: 1110px;
     margin: auto;
 
 }
@@ -346,7 +355,8 @@ feedback-body .feedback-content .feedback-btn a {
     background: #E7ECFF;
     height: 188px; 
     margin-top: 39px;
-    
+    min-width: 1270px;
+    width: 100%;
 }
 
 .footer-container .footer-wrapper {
@@ -394,6 +404,43 @@ footer .footer-logo {
     color: #37447E;
 }
 
+
+
+/*desktop, tablet*/
+/*mac vs windows*/
+/*max zoom is 500%*/ 
+
+/* mobile phone size, 250% zoom */
+@media only screen and (max-width: 600px) {
+    /*.landing-page {width: 430px;}*/
+    .nav-container { background: blue; }
+    nav ul {margin-left: 40px; }
+    nav .logo {margin-left: 100px;}
+    header .hero-content { 
+        width: 430px; 
+        margin-left: 40px; }
+    header .hero-content h1 {width: 430px;}
+    header .hero-content p { width: 430px; }
+    header form .mc-field-group input[type=email]{
+        width: 300px; }
+    .jobs-image { display: none;}
+    .jobs-content .description {
+        width: 430px;
+        margin-left: 40px; }
+    
+
+}
+ /* small devices (portrait tablets, large phones) */ 
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
