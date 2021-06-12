@@ -24,11 +24,11 @@ body {
 .nav-container {
     background: #EFF2FC;
     height: 88px;
-    /*min-width: 1270px;*/ /* only for scrolling feature*/
+    /*min-width: 1263px;*/ /* only for scrolling feature*/
 }
 .wrapper {
     width: 100%;
-    max-width: 1270px;
+    max-width: 1263px;
     margin: auto;
 }
 
@@ -80,7 +80,7 @@ nav .logo {
 }
 .header-wrapper {
     margin-top: 30px;
-    width: 1270px;
+    width: 1263px;
     margin: auto;
 }
 
@@ -90,7 +90,7 @@ nav .logo {
 }
 
 header .hero-content {
-    margin-left: 80px;
+    margin-left: 7%;
 }
 
 header .hero-image {
@@ -219,7 +219,7 @@ header .hero-content h2 {
 }
 
     .jobs-wrapper {
-        width: 1270px;
+        width: 1263px;
         margin: auto;
     }
         .jobs-wrapper header {
@@ -256,7 +256,6 @@ header .hero-content h2 {
             .jobs-container .description p {
                 font-family: PT Sans;
                 font-style: normal;
-                font-weight: normal;
                 font-size: 16px;
                 line-height: 30px;
                 color: #222F65;
@@ -368,12 +367,12 @@ feedback-body .feedback-content .feedback-btn a {
     background: #E7ECFF;
     height: 188px; 
     margin-top: 39px;
-    /*min-width: 1270px;*/
+    /*min-width: 1263px;*/
 }
 
 .footer-container .footer-wrapper {
     width: 100%;
-    max-width: 1270px;
+    max-width: 1263px;
     margin: auto;
 }
 
@@ -424,26 +423,37 @@ footer .footer-logo {
 /*mac vs windows*/
 /*max zoom is 500%*/ 
 
+
+
 /* mobile phone size, 250% zoom */
 @media only screen and (max-width: 600px) {
-    /*.landing-page {width: 430px;}*/
-    .nav-container { background: blue; }
-    nav ul {margin-left: 40px; }
-    nav .logo {margin-left: 100px;}
-    header .hero-content { 
-        width: 430px; 
-        margin-left: 40px; }
-    header .hero-content h1 {width: 430px;}
-    header .hero-content p { width: 430px; }
-    /*header form .mc-field-group input[type=email]{
-        width: 300px; }*/
+    /*.nav-container { background: blue; }*/
+    nav ul {margin-left: 10% }
+    nav .logo {margin-left: 20%;}
+    .nav-items li { margin-right: 20%;}
+    header .hero-image {display: none;}
+    header form .mc-field-group input[type=email]{
+        width: 95%;}
+    header form .clear input[type=submit] {
+        margin-left: 0%;
+        padding: 11px 12px 9px 12px;}
     .jobs-image { display: none;}
-    .jobs-content .description {
-        width: 430px;
-        margin-left: 40px; }
-    
-
+    .jobs-container .description {
+        width: 70%;
+        margin-left: 15%;}
 }
+/* 500% zoom */ 
+@media only screen and (max-width: 320px) {
+    /*.nav-container { background: red; }*/
+    nav .logo {font-size: 16px;}
+    .nav-items li a {font-size: 12px;}
+    .table-container table tr th {font-size: 18px;}
+    .table-container table tr td {font-size: 18px;}
+}
+
+
+
+
  /* small devices (portrait tablets, large phones) */ 
 @media only screen and (min-width: 600px) {}
 
@@ -461,7 +471,7 @@ footer .footer-logo {
 /* Resources */
 .resources-header-container {
     margin: auto;
-    width: 1270px;
+    width: 1263px;
 }
 
 .resources-header-container h1{
