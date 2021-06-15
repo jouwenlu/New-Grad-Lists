@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import Navbar from "../../Navbar";
+import Footer from "../../Footer";
 import LandingImage from "../../assets/images/landing_page.svg";
 import Typography from "@material-ui/core/Typography";
 
@@ -77,6 +78,7 @@ function LandingPage() {
         </Typography>
         <div className="btn">Fill Out This Form!</div>
       </div>
+      <Footer />
     </div>
   );
 }

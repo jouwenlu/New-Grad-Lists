@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import LandingPage from "../pages/LandingPage";
 import { AuthProvider } from "../context/AuthContext";
 import { useState, useEffect } from "react";
+import "../scss/custom.scss";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -36,7 +37,7 @@ function App() {
     <AuthProvider>
       <div className="App">
         {/* <Navbar /> */}
-        <LandingPage/>
+        <LandingPage />
       </div>
     </AuthProvider>
   );

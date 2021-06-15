@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
@@ -29,10 +30,14 @@ const theme = createMuiTheme({
         color: "#091133",
       },
       body1: {
-        fontSize: "16px",
+        fontSize: "18px",
         color: "#222F65",
       },
       body2: {
+        fontSize: "16px",
+        color: "#222F65",
+      },
+      body3: {
         fontSize: "14px",
         color: "#222F65",
       },
