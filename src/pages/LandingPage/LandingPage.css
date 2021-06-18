@@ -1,52 +1,41 @@
+.landing-page {
+  overflow-x: hidden;
+}
+
 .landing-intro {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.landing-intro-content {
+.landing-intro-section-wrapper {
   flex: 1;
-  padding: 25vh 5vw;
 }
 
-.landing-intro-content .title {
+.landing-intro .title {
   color: #091133;
   font-weight: bold;
 }
 
-.landing-intro-content .body {
+.landing-intro .body {
   margin: 24px 0px;
+  color: #222f65;
 }
 
-.landing-intro-content .btn-group {
-  display: flex;
-  justify-content: space-between;
-  margin: 48px 0px;
-}
-
-.landing-intro-content .btn {
-  padding: 12px 12px;
-  border-radius: 6px;
+.landing-intro .btn {
+  border-radius: 12px;
   font-weight: bold;
-  width: 42%;
   text-align: center;
 }
 
-.landing-intro-content .btn-group .buyer-btn {
+.landing-intro .buyer-btn {
   background-color: #37447e;
   color: #ffffff;
 }
 
-.landing-intro-content .btn-group .seller-btn {
+.landing-intro .seller-btn {
   background-color: #ffc93c;
   color: #222f65;
-}
-
-.landing-intro-image {
-  flex: 1.5;
-  object-fit: cover;
-  height: 100%;
-  display: grid;
-  place-items: center;
 }
 
 .landing-hiw .title {
@@ -117,10 +106,10 @@
 }
 
 .landing-feedback .btn {
-  background-color: #BAC3E5;
+  background-color: #bac3e5;
   padding: 12px 24px;
   width: max-content;
   border-radius: 12px;
-  color: #222F65;
+  color: #222f65;
   margin-top: 12px;
 }
