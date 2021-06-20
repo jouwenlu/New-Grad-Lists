@@ -1,7 +1,6 @@
 /* Navigation */
 .navbar {
   background: #eff2fc !important;
-  /* height: 88px; */
 }
 
 nav ul {
@@ -21,7 +20,7 @@ nav .nav-item {
   margin: 0 12px;
 }
 
-.navbar-nav .nav-item .h5 {
+.navbar-nav .nav-item .nav-link{
   color: #222f65 !important;
 }
 
@@ -32,7 +31,6 @@ nav .nav-item {
   font-size: 1.125rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
   line-height: 1.2;
 }
 

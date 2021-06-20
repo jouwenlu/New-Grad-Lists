@@ -3,14 +3,13 @@ import "./LandingPage.css";
 import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import LandingImage from "../../assets/images/landing_page.jpg";
-import Typography from "@material-ui/core/Typography";
 
 function LandingPage() {
   return (
     <div className="landing-page">
       <Navbar />
-      <div className="landing-intro my-5 container-lg">
-        <div className="container-lg">
+      <div className="landing-intro container-lg">
+        <div className="container-fluid">
           <h1 className="title">We are here for you!</h1>
           <h6 className="body">
             We show you companies now hiring and help you get to the next step in your career, specifically for Wall
@@ -25,56 +24,49 @@ function LandingPage() {
             </button>
           </div>
         </div>
-        <div className="container-lg d-none d-lg-block">
-          <img src={LandingImage} className="img-fluid" alt="" />
+        <div className="container-fluid d-none d-lg-block">
+          <img src={LandingImage} className="mg-fluid" alt="" />
         </div>
       </div>
-      <div className="landing-hiw">
-        <Typography variant="h2" className="title">
-          How it works
-        </Typography>
-        <div className="user-group">
-          <div className="user-container">
-            <Typography variant="h2">As a buyer</Typography>
+      <div className="landing-hiw container-lg">
+        <div className="row w-100">
+          <h2 className="title mb-5">How it works</h2>
+        </div>
+        <div className="row w-100 justify-content-between">
+          <div className="user-container col-md-5 mb-3">
+            <h2>As a buyer</h2>
           </div>
-          <div className="user-container">
-            <Typography variant="h2">As a seller</Typography>
+          <div className="user-container col-md-5">
+            <h2>As a seller</h2>
           </div>
         </div>
       </div>
-      <div className="landing-faq">
-        <Typography variant="h2" className="title">
-          Frequently Asked Questions
-        </Typography>
-        <Typography variant="body1" className="body">
+      <div className="landing-faq container-lg">
+        <h2 className="title">Frequently Asked Questions</h2>
+        <h6 className="body mt-3">
           A platform that gives you the most up to date information on investment banking recruiting.
-        </Typography>
-        <div className="user-group">
-          <div className="user-container">
+        </h6>
+        <div className="row justify-content-between">
+          <div className="faq-list col-md-5 py-4 px-3 mb-3">
             <ul>
               <li>
-                <Typography variant="body1" className="body">
-                  Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions
-                </Typography>
+                <h6 className="body">Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions</h6>
               </li>
             </ul>
           </div>
-          <div className="user-container">
+          <div className="col-md-2"></div>
+          <div className="faq-list col-md-5 py-4 px-3">
             <ul>
               <li>
-                <Typography variant="body1" className="body">
-                  Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions
-                </Typography>
+                <h6 className="body">Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions</h6>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="landing-feedback">
-        <Typography variant="h2" className="title">
-          Got Feedback?
-        </Typography>
-        <div className="btn">Fill Out This Form!</div>
+      <div className="landing-feedback container-lg">
+        <h2 className="title mb-4">Got Feedback?</h2>
+        <div className="btn px-5 py-2">Fill Out This Form!</div>
       </div>
       <Footer />
     </div>

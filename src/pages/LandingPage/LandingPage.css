@@ -2,10 +2,15 @@
   overflow-x: hidden;
 }
 
+.landing-page .container-lg {
+  min-height: 100vh;
+}
+
 .landing-intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -85px; /** Navbar height **/
 }
 
 .landing-intro-section-wrapper {
@@ -38,78 +43,84 @@
   color: #222f65;
 }
 
-.landing-hiw .title {
+.landing-hiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-hiw .row .title {
   font-weight: bold;
   text-align: center;
 }
 
-.landing-hiw .user-group {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 48px;
-}
-
-.landing-hiw .user-group .user-container {
+.landing-hiw .row .user-container {
   background-color: #eff2fc;
   border-radius: 35px;
-  width: 533px;
   min-height: 432px;
 }
 
 .landing-faq {
-  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-faq .title {
   font-weight: bold;
   text-align: center;
+  color: #091133;
+}
+
+.landing-faq .row {
+  margin-top: 6rem;
 }
 
 .landing-faq .body {
   text-align: center;
-  margin-top: 12px;
+  color: #222f65;
 }
 
-.landing-faq .user-group {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 48px;
-}
-
-.landing-faq .user-group .user-container {
+.landing-faq .faq-list {
   background-color: #eff2fc;
   border-radius: 20px;
-  width: 386px;
   min-height: 132px;
-  padding: 4px 32px 0 4px;
 }
 
-.landing-faq .user-group li .body {
+.landing-faq .faq-list li .body {
   font-weight: bold;
   text-align: left;
 }
 
-.landing-faq .user-group ul li {
+.landing-faq .faq-list ul li {
   color: #6f7cb2;
   font-size: 24px;
   margin-left: -5px;
 }
 
 .landing-feedback {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 7px 38px -1px rgba(119, 155, 231, 0.25);
   text-align: center;
-  margin: 120px 120px;
   padding: 36px;
   border-radius: 12px;
   display: grid;
   place-items: center;
+
+  min-height: 30vh !important;
+  margin-bottom: 8rem;
+}
+
+.landing-feedback .title {
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 .landing-feedback .btn {
+  font-family: "Roboto";
+  font-weight: 500;
   background-color: #bac3e5;
-  padding: 12px 24px;
-  width: max-content;
   border-radius: 12px;
   color: #222f65;
-  margin-top: 12px;
 }

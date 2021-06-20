@@ -25,7 +25,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light py-3">
+    <nav className="navbar navbar-expand-md navbar-light py-3">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src={Logo} alt="" height="38" />
@@ -50,10 +50,10 @@ function Navbar() {
               <a className="nav-link h5 fw-bold">Resources</a>
             </li>
             <li onClick={handleSignInModalOpen} className="nav-item">
-              <a className="nav-link h5">Login</a>
+              <a className="nav-link h5 fw-normal">Login</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link nav-outline-btn">Sign up</a>
+            <li className="nav-item" onClick={handleSignInModalOpen}>
+              <a className="nav-link nav-outline-btn fw-normal">Sign up</a>
             </li>
           </ul>
         </div>
