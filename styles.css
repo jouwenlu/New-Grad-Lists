@@ -425,9 +425,9 @@ footer .footer-logo {
 /* mobile phone size, 250% zoom */
 @media only screen and (max-width: 600px) {
     /*.nav-container { background: blue; }*/
-    nav ul {margin-left: 10% }
-    nav .logo {margin-left: 20%;}
-    .nav-items li { margin-right: 20%;}
+    /* nav ul {margin-left: 10% } */
+    /* nav .logo {margin-left: 20%;}
+    .nav-items li { margin-right: 20%;} */
     header .hero-content {
         margin-left:10%;
     }
@@ -445,7 +445,7 @@ footer .footer-logo {
 /* 500% zoom */ 
 @media only screen and (max-width: 320px) {
     /*.nav-container { background: red; }*/
-    nav .logo {font-size: 16px;}
+    /* nav .logo {font-size: 16px;} */
     .nav-items li a {font-size: 12px;}
     .table-container table tr th {font-size: 18px;}
     .table-container table tr td {font-size: 18px;}
